@@ -2,7 +2,6 @@
 <html>
   <head>
 
-
     <link rel="stylesheet" href="build/css/vendor.css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="build/js/vendor.min.js"></script>
@@ -11,15 +10,16 @@
     <title>Age Calculator</title>
   </head>
   <body>
-    <div class="jumbotron">
-      <h1>Age Calculator</h1>
-    </div>
+
     <div class="container-fluid">
+      <div class="jumbotron">
+        <h1>Age Calculator</h1>
+      </div>
       <div class="row">
         <div class="col-md-5">
           <!-- <button type="button" name="btnA">Enter by Age</button>
           <button type="button" name="btnA">Enter by Birthdate</button> -->
-          <form id="ageConverter">
+          <!-- <form id="ageConverter">
             <div class="form-group">
               <label for="age">Enter your Age:</label>
               <input id="age">
@@ -29,7 +29,7 @@
             <br><div id="result">
               <p>This is your age in seconds: <span id="ageInSecResult"></span></p>
             </div><br>
-          </form>
+          </form> -->
 
           <form id="dateToAge">
             <div class="form-group">
@@ -37,12 +37,14 @@
               <input type="date" name="bday" id="bday">
             </div>
             <button type="submit" name="btn1">Get Age</button> <br>
-            <div id="result1">
-              <p>This is your age based on your birthday: <span id="ageDate"></span></p>
+            <div id="result">
+              <p>Your age in years: <span id="ageDate"></span></p>
+              <p>Your age in seconds: <span id="ageInSecResult"></span></p>
             </div>
           </form>
 
           <form id="contintent">
+            <label> Select your area of residence:</label>
             <select>
               <br>
               <option value="Northern America">Northern America</option>

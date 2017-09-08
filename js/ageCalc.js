@@ -1,7 +1,9 @@
 export class AgeCalc{
-  constructor(age, bday, contintent, gender){
-    this.age = age;
+  constructor(bday, contintent, gender){
+    this.contintent = contintent;
+    this.gender = gender;
     this.bday = bday;
+    this.age = this.bdayToAge(bday);
   }
   ageToSec(age){
     let ageInSec = age * 31556952;
@@ -44,7 +46,7 @@ export class AgeCalc{
   }
 
   //https://www.statista.com/statistics/270861/life-expectancy-by-continent/
-  residence(contintent, gender){
+  residence(age, contintent, gender){
     let lifeExpectancy = 0;
     if(gender === "male" && contintent === "Northern America"){
       lifeExpectancy = 77;
@@ -71,6 +73,7 @@ export class AgeCalc{
     }else if(gender === "female" && contintent === "Africa"){
       lifeExpectancy = 64;
     }
-    return lifeExpectancy;
+    let yearsLeft = lifeExpectancy - age;
+    return yearsLeft;
   }
 }

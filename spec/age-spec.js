@@ -3,8 +3,8 @@ import { AgeCalc } from './../js/ageCalc.js';
 describe('AgeCalc', function(){
 
   it ('should test ageCalc instance of AgeCalc', function() {
-    let ageCalc = new AgeCalc("3");
-    expect(ageCalc.age).toEqual("3");
+    let ageCalc = new AgeCalc("1990-10-10", "Asia", "female");
+    expect(ageCalc.age).toEqual(26);
   });
   it('should calculate number of seconds in 1 year', function(){
     let ageCalc = new AgeCalc("1");
@@ -49,5 +49,9 @@ describe('AgeCalc', function(){
     let ageCalc = new AgeCalc(27, "1990-9-30");
     expect(ageCalc.bdayToAge("1990-9-30")).toEqual(26);
     expect(ageCalc.ageInJupiter(27)).toEqual(2);
+  });
+  it('should calculate years left', function() {
+    let ageCalc = new AgeCalc(27, "1990-9-30", "Asia", "female");
+    expect(ageCalc.residence(27, "Asia", "female")).toEqual(47);
   });
 });
