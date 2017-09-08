@@ -10,14 +10,15 @@ $(document).ready(function() {
     } else{
       let output = new AgeCalc(input);
       $('#ageInSecResult').text(output.ageToSec(input));
-
+      $('#result').show();
     }
   });
   $('#dateToAge').submit(function(event) {
       event.preventDefault();
       let date = $('#bday').val();
-      console.log(date);
+
       let age = new AgeCalc(date);
       $('#ageDate').text(age.bdayToAge(date));
+      $('#result1').show();
   });
 });
