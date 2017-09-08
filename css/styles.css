@@ -1,3 +1,4 @@
+
 .jumbotron{
   text-align: center;
   font-weight: bolder;
@@ -12,3 +13,6 @@
 #result, #result1{
   display: none;
 }
+/*#ageConverter, #dateToAge{
+  display: none;
+}*/
