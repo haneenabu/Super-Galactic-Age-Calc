@@ -30,4 +30,24 @@ describe('AgeCalc', function(){
     let ageCalc = new AgeCalc("1990-9-30");
     expect(ageCalc.bdayToAge("1990-9-30")).toEqual(26);
   });
+  it('should calculate age on mercury based on earth age', function() {
+    let ageCalc = new AgeCalc(27, "1990-9-30");
+    expect(ageCalc.bdayToAge("1990-9-30")).toEqual(26);
+    expect(ageCalc.ageInMercury(27)).toEqual(113);
+  });
+  it('should calculate age on venus based on earth age', function() {
+    let ageCalc = new AgeCalc(27, "1990-9-30");
+    expect(ageCalc.bdayToAge("1990-9-30")).toEqual(26);
+    expect(ageCalc.ageInVenus(27)).toEqual(44);
+  });
+  it('should calculate age on mars based on earth age', function() {
+    let ageCalc = new AgeCalc(27, "1990-9-30");
+    expect(ageCalc.bdayToAge("1990-9-30")).toEqual(26);
+    expect(ageCalc.ageInMars(27)).toEqual(14);
+  });
+  it('should calculate age on jupiter based on earth age', function() {
+    let ageCalc = new AgeCalc(27, "1990-9-30");
+    expect(ageCalc.bdayToAge("1990-9-30")).toEqual(26);
+    expect(ageCalc.ageInJupiter(27)).toEqual(2);
+  });
 });

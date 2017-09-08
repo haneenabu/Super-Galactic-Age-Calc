@@ -18,4 +18,28 @@ export class AgeCalc{
     }
     return age;
   }
+  ageInMercury(age){
+    let ageInSec = this.ageToSec(age);
+    let formula = 31556952 * (.24);
+    let years = ageInSec/formula;
+    return Math.round(years);
+  }
+  ageInVenus(age){
+    let ageInSec = this.ageToSec(age);
+    let formula = 31556952 * (.62);
+    let years = ageInSec/formula;
+    return Math.round(years);
+  }
+  ageInMars(age){
+    let ageInSec = this.ageToSec(age);
+    let formula = 31556952 * (1.88);
+    let years = ageInSec/formula;
+    return Math.round(years);
+  }
+  ageInJupiter(age){
+    let ageInSec = this.ageToSec(age);
+    let formula = 31556952 * (11.86);
+    let years = ageInSec/formula;
+    return Math.round(years);
+  }
 }

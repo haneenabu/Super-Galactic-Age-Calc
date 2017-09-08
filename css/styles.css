@@ -1,0 +1,11 @@
+.jumbotron{
+  text-align: center;
+  font-weight: bolder;
+  background-color: inherit;
+}
+.col-md-5{
+  border: 2px solid grey;
+  padding: 5%;
+  margin: 5%;
+  /*background: hsla(0, 100%, 90%, 0.7);*/
+}
