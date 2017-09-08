@@ -52,26 +52,38 @@ export class AgeCalc{
       lifeExpectancy = 77;
     }else if(gender === "female" && contintent === "Northern America"){
       lifeExpectancy = 81;
+    }else if(gender === "other" && contintent === "Northern America"){
+      lifeExpectancy = 79;
     }else if(gender === "male" && contintent === "Europe"){
       lifeExpectancy = 75;
     }else if(gender === "female" && contintent === "Europe"){
       lifeExpectancy = 81;
+    }else if(gender === "other" && contintent === "Europe"){
+      lifeExpectancy = 77;
     }else if(gender === "male" && contintent === "Oceania"){
       lifeExpectancy = 75;
     }else if(gender === "female" && contintent === "Oceania"){
       lifeExpectancy = 79;
+    }else if(gender === "other" && contintent === "Oceania"){
+      lifeExpectancy = 77;
     }else if(gender === "male" && contintent === "Latin America and the Caribbean"){
       lifeExpectancy = 73;
     }else if(gender === "female" && contintent === "Latin America and the Caribbean"){
       lifeExpectancy = 79;
+    }else if(gender === "other" && contintent === "Latin America and the Caribbean"){
+      lifeExpectancy = 75;
     }else if(gender === "male" && contintent === "Asia"){
       lifeExpectancy = 71;
     }else if(gender === "female" && contintent === "Asia"){
       lifeExpectancy = 74;
+    }else if(gender === "other" && contintent === "Asia"){
+      lifeExpectancy = 72;
     }else if(gender === "male" && contintent === "Africa"){
       lifeExpectancy = 61;
     }else if(gender === "female" && contintent === "Africa"){
       lifeExpectancy = 64;
+    }else if(gender === "other" && contintent === "Africa"){
+      lifeExpectancy = 62;
     }
     let yearsLeft = lifeExpectancy - age;
     return yearsLeft;

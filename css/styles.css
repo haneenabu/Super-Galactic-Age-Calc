@@ -19,7 +19,7 @@ body{
   padding: 5%;
   margin: 5%;
   background:hsla(0, 100%, 90%, 0.2);
-  /*background: hsla(0, 100%, 90%, 0.7);*/
+  
 }
 #result, #result1{
   display: none;

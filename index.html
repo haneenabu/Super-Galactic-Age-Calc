@@ -33,23 +33,36 @@
 
           <form id="dateToAge">
             <div class="form-group">
-              <label for="bday">Or you can select your date of birth: </label>
-              <input type="date" name="bday" id="bday">
+              <label for="bday">Select your Date of Birth: </label>
+              <input type="date" name="bday" id="bday" value='1990-10-10'>
             </div>
-            <button type="submit" name="btn1">Get Age</button> <br>
-            <div id="result">
-              <p>Your age in years: <span id="ageDate"></span></p>
-              <p>Your age in seconds: <span id="ageInSecResult"></span></p>
-            </div>
-          </form>
 
-          <form id="contintent">
+
+
             <label> Select your area of residence:</label>
-            <select>
+            <select id="dropDown">
               <br>
               <option value="Northern America">Northern America</option>
+              <option value="Europe">Europe</option>
+              <option value="Oceania">Oceania</option>
+              <option value="Latin America and the Caribbean">Latin America and the Caribbean</option>
+              <option value="Asia">Asia</option>
+              <option value="Africa">Africa</option>
             </select>
+            <form>
+              <label> Select a Gender: </label> <br>
+              <input type="radio" name="gender" value="male" checked> Male<br>
+              <input type="radio" name="gender" value="female"> Female<br>
+              <input type="radio" name="gender" value="other"> Other<br>
+            </form>
+            <br>
+            <button type="submit" name="btn1">Get Age</button>
           </form>
+          <div id="result">
+            <p>Your age in years: <span id="ageDate"></span></p>
+            <p>Your age in seconds: <span id="ageInSecResult"></span></p>
+            <p>Years left on Earth: <span id="earthYears"></span></p>
+          </div>
         </div>
       </div>
     </div>

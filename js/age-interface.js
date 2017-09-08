@@ -16,11 +16,14 @@ $(document).ready(function() {
   $('#dateToAge').submit(function(event) {
       event.preventDefault();
       let date = $('#bday').val();
-
+      let contintent= $('#dropDown :selected').text();
+      let gender = "female";
+      
       let ageCalc = new AgeCalc(date);
       let age = ageCalc.bdayToAge(date);
       $('#ageDate').text(age);
       $('#ageInSecResult').text(ageCalc.ageToSec(age));
+      $('#earthYears').text(ageCalc.residence(age, contintent, gender));
       $('#result').show();
   });
 });
