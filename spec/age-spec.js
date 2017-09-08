@@ -18,4 +18,16 @@ describe('AgeCalc', function(){
     let ageCalc = new AgeCalc("27");
     expect(ageCalc.ageToSec("27")).toEqual(852037704);
   });
+  it('should calculate age based on a birthday', function() {
+    let ageCalc = new AgeCalc("1990-5-10");
+    expect(ageCalc.bdayToAge("1990-5-10")).toEqual(27);
+  });
+  it('should calculate age based on a birthday that is later this year', function() {
+    let ageCalc = new AgeCalc("1990-12-10");
+    expect(ageCalc.bdayToAge("1990-12-10")).toEqual(26);
+  });
+  it('should calculate age based on a birthday that falls later on the current month', function() {
+    let ageCalc = new AgeCalc("1990-9-30");
+    expect(ageCalc.bdayToAge("1990-9-30")).toEqual(26);
+  });
 });

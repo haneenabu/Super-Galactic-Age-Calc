@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="bower_components/moment/min/moment.min.js"></script>
     <link rel="stylesheet" href="build/css/vendor.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
@@ -9,16 +10,26 @@
   </head>
   <body>
     <div class="container">
+      <div class="jumbotron">
+        <h2>Age Calculator</h2>
+      </div>
       <form id="ageConverter">
         <div class="form-group">
           <label for="age">Enter your Age:</label>
           <input id="age">
+
         </div>
         <button type="submit" name="btn">Convert</button>
+        <br><div id="result">
+          <p>This is your age in seconds: <span id="ageInSecResult"></span></p>
+        </div><br>
+        <div class="form-group">
+          <label for="bday">Or you can select your date of birth: </label>
+          <input type="date" name="bday" data-date-inline-picker="true">
+        </div>
+        <button type="submit" name="btn1">Get Age</button>
       </form>
-      <div id="result">
-        <p>This is your age in seconds: <span id="ageInSecResult"></span></p>
-      </div>
+      
     </div>
   </body>
 </html>
