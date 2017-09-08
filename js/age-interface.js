@@ -13,4 +13,11 @@ $(document).ready(function() {
 
     }
   });
+  $('#dateToAge').submit(function(event) {
+      event.preventDefault();
+      let date = $('#bday').val();
+      console.log(date);
+      let age = new AgeCalc(date);
+      $('#ageDate').text(age.bdayToAge(date));
+  });
 });

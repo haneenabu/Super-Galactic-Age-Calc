@@ -23,13 +23,19 @@
         <br><div id="result">
           <p>This is your age in seconds: <span id="ageInSecResult"></span></p>
         </div><br>
+      </form>
+
+      <form id="dateToAge">
         <div class="form-group">
           <label for="bday">Or you can select your date of birth: </label>
-          <input type="date" name="bday" data-date-inline-picker="true">
+          <input type="date" name="bday" id="bday">
         </div>
         <button type="submit" name="btn1">Get Age</button>
+        <div id="result1">
+          <p>This is your age based on your birthday: <span id="ageDate"></span></p>
+        </div>
       </form>
-      
+
     </div>
   </body>
 </html>
