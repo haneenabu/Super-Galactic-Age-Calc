@@ -12,6 +12,7 @@ $(document).ready(function() {
     let ageCalc = new AgeCalc(date);
     let age = ageCalc.bdayToAge(date);
     let yearsLeft = ageCalc.residence(age, contintent, gender);
+    console.log(yearsLeft > 0);
     $('#ageDate').text(age);
     $('#ageInSecResult').text(ageCalc.ageToSec(age));
     $('#earthYears').text(yearsLeft);
@@ -21,6 +22,16 @@ $(document).ready(function() {
     $('#jupiterYears').text(ageCalc.ageInJupiter(yearsLeft));
     $('.output').show();
     $('#result').show();
+
+    if(yearsLeft > 0){
+      $('.planets').show();
+      $('.outLived').hide();
+    } else {
+      $('.planets').hide();
+      $('.outLived').show();
+    }
+
+
   });
 });
 

@@ -27,7 +27,7 @@ h4{
 #result{
   display: none;
 }
-.output{
+.output, .planets, .outLived{
   display: none;
 }
 /*#ageConverter, #dateToAge{

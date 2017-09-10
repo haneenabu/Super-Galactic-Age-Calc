@@ -86,6 +86,7 @@ export class AgeCalc{
       lifeExpectancy = 62;
     }
     let yearsLeft = lifeExpectancy - age;
+    
     return yearsLeft;
   }
 }
