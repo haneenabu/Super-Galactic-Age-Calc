@@ -34,21 +34,3 @@ $(document).ready(function() {
 
   });
 });
-
-
-
-  // $('#ageConverter').submit(function(event) {
-  //   event.preventDefault();
-  //   let input = $('#age').val();
-  //   if (isNaN(input)) {
-  //     alert("Please enter a valid age.");
-  //   } else{
-  //     let output = new AgeCalc(input);
-  //
-  //     $('#result').show();
-  //   }
-  // });
-
-// $('#btnA').click(function(){
-//   $('#ageConverter').show();
-// });
