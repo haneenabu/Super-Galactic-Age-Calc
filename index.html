@@ -16,7 +16,7 @@
         <h1>Age Calculator</h1>
       </div>
       <div class="row">
-        <div class="col-md-5">
+        <div class="col-md-4">
           <!-- <button type="button" name="btnA">Enter by Age</button>
           <button type="button" name="btnA">Enter by Birthdate</button> -->
           <!-- <form id="ageConverter">
@@ -46,19 +46,28 @@
               <option value="Asia">Asia</option>
               <option value="Africa">Africa</option>
             </select>
-            <form>
+            <br>
+            <br>
               <label> Select a Gender: </label> <br>
               <input type="radio" name="gender" value="male" checked> Male<br>
               <input type="radio" name="gender" value="female"> Female<br>
               <input type="radio" name="gender" value="other"> Other<br>
-            </form>
             <br>
             <button type="submit" name="btn1">Get Age</button>
           </form>
+
+        </div>
+        <div class="col-md-4 output">
           <div id="result">
+            <h4><strong>Age Calculation Results:</strong></h4>
             <p>Your age in years: <span id="ageDate"></span></p>
             <p>Your age in seconds: <span id="ageInSecResult"></span></p>
-            <p>Years left on Earth: <span id="earthYears"></span></p>
+            <h4><strong>Years Left on Each Planet:</strong></h4>
+            <p>Earth: <span id="earthYears"></span></p>
+            <p>Mercury: <span id="mercuryYears"></span></p>
+            <p>Venus: <span id="venusYears"></span></p>
+            <p>Mars: <span id="marsYears"></span></p>
+            <p>Jupiter <span id="jupiterYears"></span></p>
           </div>
         </div>
       </div>

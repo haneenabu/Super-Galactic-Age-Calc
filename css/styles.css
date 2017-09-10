@@ -8,20 +8,26 @@ body{
   background-size: cover;
   font-family: cursive;
 }
+h4{
+  text-align: center;
+}
 .jumbotron{
   text-align: center;
   font-weight: bolder;
   background-color: inherit;
 }
-.col-md-5{
+.col-md-4{
 
   border: 2px solid grey;
   padding: 5%;
   margin: 5%;
   background:hsla(0, 100%, 90%, 0.2);
-  
+
 }
-#result, #result1{
+#result{
+  display: none;
+}
+.output{
   display: none;
 }
 /*#ageConverter, #dateToAge{

@@ -22,13 +22,13 @@ export class AgeCalc{
   }
   ageInMercury(age){
     let ageInSec = this.ageToSec(age);
-    let formula = 31556952 * (.24);
+    let formula = 31556952 * (0.24);
     let years = ageInSec/formula;
     return Math.round(years);
   }
   ageInVenus(age){
     let ageInSec = this.ageToSec(age);
-    let formula = 31556952 * (.62);
+    let formula = 31556952 * (0.62);
     let years = ageInSec/formula;
     return Math.round(years);
   }
