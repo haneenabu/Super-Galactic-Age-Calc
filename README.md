@@ -8,6 +8,8 @@
 
 _This website will prompt the user for a birthdate selection. It will then analyze the user's input and compute the total age and age in seconds. The website will then display the resulting age on planets or show that the user exceeded life expectancy_
 
+![LandingPage](css/Screen Shot 2017-12-04 at 11.11.49 AM.png)
+
 ## Specs
 
 * _The program lists the total the age based on the birthdate_
